@@ -1,0 +1,28 @@
+{
+    "manifest_version":3,
+    "name": "like_ike",
+    "desccription": "Sync Canvas assignments with Notion and organize them using the Eisenhower Matrix.",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "https://success-777.iimhonde.workers.dev/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls"],
+            "js": ["content.js"]
+        }
+    ],
+    "content_security_policy": {
+    "extension_pages": "script-src 'self' https://success-777.iimhonde.workers.dev/; object-src 'self'"
+    }
+
+}

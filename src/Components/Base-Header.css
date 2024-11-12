@@ -1,0 +1,39 @@
+/* Base.css */
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
+
+:root {
+    --background-color: #48614E;
+    --font-family-primary: 'Stardos Stencil', sans-serif;
+    --text-color: #FFFFFF;
+    --default-width: 100vw; 
+    --default-height: 10vh; 
+    --logo-width: 5vw; 
+    --logo-height: 5vh; 
+    --logo-position-left: 2vw; 
+    --logo-position-top: 1.5vh; 
+}
+
+.header {
+    width: var(--default-width);
+    height: var(--default-height);
+    background-color: var(--background-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    color: var(--text-color);
+    font-family: var(--font-family-primary);
+}
+
+.header-title {
+    font-size: calc(1.5em + 1vw); 
+    margin-left: 2%; 
+}
+
+/* Logo styling */
+.logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+    position: absolute;
+    left: var(--logo-position-left);
+    top: var(--logo-position-top);
+}

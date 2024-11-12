@@ -1,0 +1,18 @@
+.reset-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: inline;
+}
+
+.refresh-container {
+    display: flex;
+    left: 282px;
+    top: 13px;
+    padding: 10 px;
+    
+}
+
+
+

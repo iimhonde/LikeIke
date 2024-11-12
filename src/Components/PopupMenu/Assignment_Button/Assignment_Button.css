@@ -1,0 +1,45 @@
+.generate-assignments-frame {
+    position: absolute;
+    width: 258px;
+    height: 65px;
+    left: 33px;
+    top: 202px;
+    cursor: pointer;
+    background: #37493B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 65px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/* Styling for the text inside the button */
+.generate-assignments-text {
+    position: absolute;
+    width: 249px;
+    height: 40px;
+    left: 9px;
+    top: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Auto Layout Adjustments */
+.auto-layout {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+

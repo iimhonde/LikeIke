@@ -1,0 +1,42 @@
+
+
+
+/* Base.css */
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
+
+
+
+
+/* Header container */
+.box{
+    width: 320px;
+    height: 64px;;
+    background: #48614E;
+    position: relative; /* Allows positioning of inner elements relative to this container */
+    z-index: 0;
+
+    /* Flex settings */
+    display: flex;
+    align-items: last baseline; /* Center items vertically */
+    justify-content: start; /* Align items to the start horizontally */
+}
+
+/* Title "LIKE IKE" */
+.boxText {
+    font-family: 'Stardos Stencil', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-bottom: calc(52.47px - 64px); /* Adjusts the bottom alignment */
+}
+
+.img{
+    position: absolute;
+    width: 43.8px;
+    height: 40.94px;
+    left: 258.04px;
+    top: 21.53px;
+}

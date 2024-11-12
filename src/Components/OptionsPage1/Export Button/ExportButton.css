@@ -1,0 +1,26 @@
+.export-button {
+    padding: 10px 20px;
+    border: 2px solid #452E2E;
+    border-radius: 5px;
+    background-color: #085039;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    margin-right:85px
+
+    
+}
+
+.export-button.selected {
+    background-color: #14AE5C; /* Highlight color */
+    color: white;
+    border: 1px solid #0056b3;
+}
+
+
+.export-button:hover {
+    background-color: #a4c7b5;
+    color: #F5F5F5;
+}
+

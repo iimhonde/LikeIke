@@ -1,0 +1,34 @@
+/* HeaderP1.css - Adjusted to work with Base-Header.css */
+@import url(../../Base-Header.css);
+
+.header {
+    width: 100%; /* Ensures header spans full width */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family-primary);
+    height: var(--default-height);
+    display: flex;
+    align-items: flex-start; /* Centers items vertically */
+    justify-content: space-between; /* Pushes export button to far right */
+    padding: 10px 20px; /* Adjust side padding as needed */
+}
+
+.headerlogo-container {
+    display: flex;
+  
+}
+
+.logo {
+    width: 51px;
+    height: 51px;
+    position: relative; /* Removes absolute positioning from Base-Header.css */
+}
+
+.header-title {
+    font-size: 61px;
+    color: var(--text-color);
+    margin: 0;
+    line-height: normal; /* Sets to normal for better alignment */
+}
+
+

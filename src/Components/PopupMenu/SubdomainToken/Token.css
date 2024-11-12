@@ -1,0 +1,79 @@
+/* Token.css */
+
+/* Main container for the Token input field */
+.token-input {
+    position: absolute;
+    width: 271.33px;
+    height: 31px;
+    left: 20px;
+    top: 135px;
+    z-index: 3;
+}
+
+/* Token input background */
+.token-background {
+    position: absolute;
+    width: 239px;
+    height: 31px;
+    right: 32.33px;
+    top: 0px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Token text input */
+.token-text {
+    position: absolute;
+    width: 114px;
+    height: 17px;
+    left: 12px;
+    top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+/* Token tooltip icon */
+.token-tooltip-icon {
+    position: absolute;
+    width: 16.67px;
+    height: 16.67px;
+    left: 254.67px;
+    top: 5.67px;
+    cursor: pointer;
+}
+
+/* Token tooltip container */
+.token-tooltip {
+    box-sizing: border-box;
+    position: absolute;
+    visibility: hidden;
+    width: 297px;
+    height: 237px;
+    left: 273px;
+    top: 2px;
+    background: rgba(255, 254, 254, 0.97);
+    border: 1px solid #F5F5F5;
+    z-index: 5;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Token help text inside the tooltip */
+.token-help-text {
+    width: 260px;
+    height: 201px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.token-tooltip-icon:hover + .token-tooltip {
+    visibility: visible;
+}

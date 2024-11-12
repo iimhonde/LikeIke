@@ -1,0 +1,44 @@
+Your UI outline looks comprehensive, but here are a few suggestions for clarifying and enhancing it to ensure smooth user interaction and clear guidance in your UI.
+
+---
+
+### Refined UI Outline
+
+**Procedure to Navigate UI**
+
+1) **Dropdown Menu**
+    - **Options**
+        - **Access Token**  
+            - **Tooltip/Help Icon (Question Mark)**: “How to retrieve Canvas API access token to sync your class assignments.”
+            - **Step-by-Step Guide**:
+                1. Login to your Canvas account.
+                2. Click on the "Account" icon on the left-hand side.
+                3. Select **Settings** in the dropdown menu within your account section.
+                4. Scroll down to **Approved Integrations**.
+                5. Click on **+ New Access Token**.
+                6. **Generate the Token**:
+                    - Optionally add a purpose for the token.
+                    - Set an expiration date if desired.
+                    - Click **Generate Token**.
+                7. **Copy the Token** immediately (you won’t be able to view it again).
+                8. **Use the Token**: Paste it in the app’s access token field to sync Canvas data like assignments and grades with other tools or dashboards.
+        - **University/Institution**: Input field for entering the institution’s Canvas subdomain (e.g., "ucf.instructure.com" => "ucf", "valenciacollege.infrastructure.com" => "valenciacollege").
+
+2) **Database Filter**
+    - **Classes**
+        - Checkbox or list of classes with the ability to uncheck (exclude) individual classes from the database view.
+    - **Assignments**
+        - Checkbox or list of assignments with options to uncheck individual assignments.
+    - **Expand Database Button**: Button to expand and view the full database details (e.g., all assignments, status).
+    - **Refresh Button**: Refresh database content to ensure the latest data is loaded.
+    - **Sync to Notion Button**: Button to sync filtered assignments with Notion and generate an Eisenhower Matrix.
+
+---
+
+### Additional Considerations
+
+- **Add Tooltips or Help Icons**: Adding help icons next to terms like "Access Token" and "Sync to Notion" could provide extra clarity to users who might be unfamiliar with these terms.
+- **Validation for Access Token and University/Institution Fields**: Ensure input fields check for empty or invalid values and provide feedback to users if needed.
+- **Loading Indicators**: A loading spinner or progress bar for sync operations (e.g., refreshing database, syncing to Notion) would improve user experience by providing feedback on ongoing actions.
+
+This refined outline ensures clarity and ease of use for all users, making it straightforward to implement in Figma.

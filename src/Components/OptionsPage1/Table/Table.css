@@ -1,0 +1,23 @@
+.assignments-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.assignments-table th, .assignments-table td {
+    border: 1px solid #B9B9B9; 
+    padding: 8px;
+}
+
+.assignments-table th {
+    background-color: #B9B9B9;
+    font-weight: bold;
+    text-align: left;
+}
+
+.assignments-table td {
+    background-color: #FFFFFF; 
+    color: #000; 
+}

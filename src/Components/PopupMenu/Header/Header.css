@@ -12,13 +12,13 @@
     width: 320px;
     height: 64px;;
     background: #48614E;
-    position: relative; /* Allows positioning of inner elements relative to this container */
+    position: relative; 
     z-index: 0;
 
     /* Flex settings */
     display: flex;
-    align-items: last baseline; /* Center items vertically */
-    justify-content: start; /* Align items to the start horizontally */
+    align-items: last baseline; 
+    justify-content: start; 
 }
 
 /* Title "LIKE IKE" */
@@ -30,7 +30,7 @@
     line-height: 66px;
     color: #FFFFFF;
     margin-left: 20px;
-    margin-bottom: calc(52.47px - 64px); /* Adjusts the bottom alignment */
+    margin-bottom: calc(52.47px - 64px); 
 }
 
 .img{

@@ -1,9 +1,9 @@
 
 
 .navigation-container {
-    max-height: 400px; /* Adjust as needed to limit vertical length */
-    overflow-y: auto; /* Allows scrolling if content exceeds max height */
-    padding-left: 10px; /* Space between table and navigation */
+    max-height: 400px;
+    overflow-y: auto;
+    padding-left: 10px; 
     box-sizing: border-box;
 }
 

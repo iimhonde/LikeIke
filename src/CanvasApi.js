@@ -35,13 +35,18 @@ class CanvasApi {
             const cleanedTargetDate = new Date(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
     
             const activeCourses = courses.filter(course => {
+                if (!course.start_at || !course.end_at) {
+                    console.warn("Skipping course due to missing dates:", course);
+                    return false; // Exclude courses with missing dates
+                }
+            
                 const startDate = new Date(course.start_at);
                 const endDate = new Date(course.end_at);
-    
                 const cleanedEndDate = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
-    
-                return startDate <= currentDate && currentDate <= endDate && cleanedTargetDate.getTime() === cleanedEndDate.getTime();
+            
+                return startDate <= currentDate && currentDate <= endDate;
             });
+            
     
             console.log('All Courses:', activeCourses);
             
@@ -52,6 +57,61 @@ class CanvasApi {
             throw error;
         }
     }
+
+        /*async getActiveCourses() {
+            const url = `${this.proxyUrl}?url=${encodeURIComponent(this.baseUrl + 'courses?per_page=50&enrollment_state=active')}`;
+            
+            try {
+                console.log(`Fetching courses from: ${url}`); // Debug: Check API call
+        
+                const response = await fetch(url, { headers: this.getHeaders() });
+        
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error(`Error fetching courses: ${response.status} ${response.statusText}`, errorText);
+                    throw new Error(`Failed to fetch courses: ${response.status}`);
+                }
+        
+                const courses = await response.json();
+        
+                if (!Array.isArray(courses) || courses.length === 0) {
+                    console.warn("No courses returned from Canvas API.");
+                    return [];
+                }
+        
+                console.log('All Courses (Before Filtering):', courses); // Debug: Log all fetched courses
+        
+                const currentDate = new Date();
+                
+                // Target Date: December 14, 2024 (Midnight UTC)
+                const targetDate = new Date('2024-12-14T00:00:00Z');
+                targetDate.setUTCHours(0, 0, 0, 0); // Normalize to prevent time drift
+        
+                const activeCourses = courses.filter(course => {
+                    if (!course.start_at || !course.end_at) {
+                        console.warn(`Skipping course due to missing dates:`, course);
+                        return false;
+                    }
+        
+                    const startDate = new Date(course.start_at);
+                    const endDate = new Date(course.end_at);
+                    
+                    startDate.setUTCHours(0, 0, 0, 0);
+                    endDate.setUTCHours(0, 0, 0, 0);
+        
+                    return startDate <= currentDate && currentDate <= endDate && targetDate.getTime() === endDate.getTime();
+                });
+        
+                console.log('Filtered Active Courses:', activeCourses); // Debug: Log filtered courses
+        
+                return activeCourses;
+        
+            } catch (error) {
+                console.error(`Error in getActiveCourses:`, error.stack);
+                throw error;
+            }
+        }*/
+        
     
     async retrieveAssignments() {
         const activeCourses = await this.getActiveCourses();

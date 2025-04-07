@@ -1,0 +1,15 @@
+.....To Do List 11/04/24.....
+1) Finish Export Button for OptionsPage1.js
+2) Do Backend for NotionAPI
+   -Store Notion Tokens
+   -Clean up data for user preference
+	-Change priority	
+   -Create a Page only if 
+	-month DNE
+  	-Week DNE
+   -Transfer Data into Page
+   -Connect to Google Calendar using Canvas API and add reminders for assignments 
+3) Do Frontend
+4) Test out
+5) Turn into Google Extension 
+6) Publish 

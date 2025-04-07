@@ -4,6 +4,7 @@
   "description": "A react-built app that turns canvas assignments into an eisenhower matrix on Notion.so",
   "main": "index.js",
   "dependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "abab": "^2.0.6",
     "accepts": "^1.3.8",
     "acorn": "^8.14.0",
@@ -894,6 +895,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "copy-webpack-plugin": "^12.0.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
